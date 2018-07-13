@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Weather Analysis - Comparisons</title>
+</head>
+<body style="background-color: lightgray">
+        
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                    <a class="navbar-brand logo" style="background-color:lightseagreen" href="index.html"> 
+                    <span class="nav-color">Latitude</span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                 
+      <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="max_temperature.html">Max Temperature</a></li>
+                <li><a href="humidity.html">Humidity</a></li>
+                <li><a href="cloudiness.html">Cloudiness</a></li>
+                <li><a href="wind_speed.html">Wind Speed</a></li>
+              </ul>
+              <li><a href="data.html">Data</a></li>
+              <li><a href="comparisons.html">Comparison</a></li>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="margin-right: 10px">
+                    <a href="Index.html"><button type="button" class="btn btn-default btn-sm">
+            <span class="glyphicon glyphicon-home"></span> Home
+          </button></a>
+          <a href="Comparisons.html"><button type="button" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-refresh"></span> Refresh
+              </button></a>
+              </div>
+              </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div id="bkgrd-container" class="container-fluid">
+    <div class="row">
+      <div id="compare_title" class="col-md-11">
+          <strong><h1>Comparison: Latitude vs. X</h1></strong>
+          <hr>
+          <br>
+          <strong><p style="color: black">Click any plot to get an in-depth analysis.</p></strong>
+          <div class="row">
+        <div id="compare_column" class="col-md-5">
+            <h3>vs. Max Temperature</h3>
+          <figure>   
+             <a href="max_temperature.html"><img src="assests/Images/Temperature.png" width="400px" height="300px"></a>
+        </figure>        
+      </div>      
+        <div id="compare_column" class="col-md-5">
+        <h3>vs. Humidity</h3>  
+          <figure>
+             <a href="humidity.html"><img src="assests/Images/Humidity.png" width="450px" height="300px"></a>
+        </figure>
+            </div> 
+     </div>   
+     <div class ="row"> 
+            <div id="compare_column" class="col-md-5">
+         <h3>vs. Cloudiness</h3> 
+          <figure> 
+          <a href="cloudiness.html"><img src="assests/Images/Cloudiness.png" width="450px" height="300px"></a>
+        </figure>
+        </div>
+        <div id="compare_column" class="col-md-5">
+        <h3>vs. Wind Speed</h3> 
+          <figure>    
+          <a href="wind_speed.html"><img src="assests/Images/Wind_Speed.png" width="450px" height="300px"></a>
+        </figure>
+        </div>
+        </div>   
+  <div class="col-md-1"></div>
+</div>      
+</div>
+<div class="fixed-bottom">Its My Copyright 2018</div>	 	
+</body>	
+<html>  
